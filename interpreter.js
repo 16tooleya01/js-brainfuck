@@ -76,5 +76,5 @@ const OUTPUT_BOX = getElementById("bf-output")
 //}
 window.onload = () => {
 	//CODE_BOX.addEventListener("input", evaluateBF(CODE_BOX.value, tape));
-	OUTPUT_BOX.style.background-color = "red"
+	OUTPUT_BOX.style.backgroundColor = "red"
 }
