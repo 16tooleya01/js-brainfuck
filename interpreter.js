@@ -72,4 +72,7 @@ function evaluateBF(code, tape) {
 				comma_counter++;
   }
 }
-window.onload = () => {CODE_BOX.addEventListener("input", evaluateBF(CODE_BOX.value, tape))}
+window.onload = () => {
+	CODE_BOX.addEventListener("input", evaluateBF(CODE_BOX.value, tape));
+	OUTPUT_BOX.style = "background-color:red;"
+}
