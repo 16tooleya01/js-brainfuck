@@ -74,7 +74,8 @@ const OUTPUT_BOX = getElementById("bf-output")
 //      }
 //  }
 //}
-window.onload = () => {
+//window.onload = () => {
 	//CODE_BOX.addEventListener("input", evaluateBF(CODE_BOX.value, tape));
 	OUTPUT_BOX.style.backgroundColor = "red"
-}
+//}
+alert("HELP ME")
