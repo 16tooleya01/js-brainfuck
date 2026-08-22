@@ -7,14 +7,14 @@
 // Start of AI-generated code
 
 // Helper function to pause execution for a specific time
-const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+//const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 // Polling utility that waits for a condition function to return true
-const waitUntil = async (conditionFunction, checkInterval = 100) => {
-  while (!conditionFunction()) {
-    await delay(checkInterval); // Check every 100ms
-  }
-};
+//const waitUntil = async (conditionFunction, checkInterval = 100) => {
+//  while (!conditionFunction()) {
+//    await delay(checkInterval); // Check every 100ms
+//  }
+//};
 // End of AI-generated code
 
 const CODE_BOX = getElementById("bf-code")
@@ -75,6 +75,6 @@ const OUTPUT_BOX = getElementById("bf-output")
 //  }
 //}
 window.onload = () => {
-	CODE_BOX.addEventListener("input", evaluateBF(CODE_BOX.value, tape));
-	OUTPUT_BOX.style = "background-color:red;"
+	//CODE_BOX.addEventListener("input", evaluateBF(CODE_BOX.value, tape));
+	OUTPUT_BOX.style.background-color = "red"
 }
