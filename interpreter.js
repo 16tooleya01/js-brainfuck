@@ -4,19 +4,7 @@
 //  [  [] ] [  ]  [ [] ],  [ ]  ] +   ] [  ] ,,[     ] ]-[ [   [ [,..   ] , [
 //  [ ,,, < [.]   \.,.>,]  [,]  ].[   ]_[  ],[       +-,.+,.]   +.,.+   [ [>,[
 
-// Start of AI-generated code
-
-// Helper function to pause execution for a specific time
-const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
-
-// Polling utility that waits for a condition function to return true
-const waitUntil = async (conditionFunction, checkInterval = 100) => {
-  while (!conditionFunction()) {
-//    await delay(checkInterval);  Check every 100ms
-  }
-};
-// End of AI-generated code
-
+try {
 const CODE_BOX = document.getElementById("bf-code");
 const INPUT_BOX = document.getElementById("bf-input");
 const OUTPUT_BOX = document.getElementById("bf-output");
@@ -67,9 +55,8 @@ function evaluateBF(code, tape) {
         //};
       break;
 			case ",":
-				if (comma_counter >= INPUT_BOX.value.length) {INPUT_BOX.style = "color: darkred;";
-																													waitUntil(comma_counter < INPUT_BOX.value.length, 250);
-																												  INPUT_BOX.style = "color: black;";};
+				if (comma_counter >= INPUT_BOX.value.length) {INPUT_BOX.style.color = "darkred";}
+				else {INPUT_BOX.style.color = "black";};
 				tape[tape.ptr] = INPUT_BOX.value.charCodeAt(comma_counter);
 				comma_counter++;
     };
@@ -78,4 +65,7 @@ function evaluateBF(code, tape) {
 window.onload = () => {
 //	CODE_BOX.addEventListener("input", evaluateBF(CODE_BOX.value, tape));
 	OUTPUT_BOX.style.backgroundColor = "aliceblue"
+}
+} catch(error) {
+  alert(error)
 }
