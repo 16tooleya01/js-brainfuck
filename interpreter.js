@@ -64,9 +64,9 @@ function evaluateBF(code, tape) {
 }
 window.onload = () => {
 	OUTPUT_BOX.style.backgroundColor = "palegreen"
-//  OUTPUT_BOX.innerHTML = "onload test"
-//  alert(`The following character should be @: ${String.fromCharCode(64)}
-//The following number should be 65: ${"A".charCodeAt(0)}`)
+  OUTPUT_BOX.innerHTML = "onload test"
+  alert(`The following character should be @: ${String.fromCharCode(64)}
+The following number should be 65: ${"A".charCodeAt(0)}`)
 }
 } catch(error) {
   alert(error)
