@@ -75,7 +75,7 @@ function evaluateBF(code, tape) {
   }
 }
 window.onload = () => {
-	CODE_BOX.addEventListener("input", evaluateBF(CODE_BOX.value, tape));
-	OUTPUT_BOX.style.backgroundColor = "blue"
+//	CODE_BOX.addEventListener("input", evaluateBF(CODE_BOX.value, tape));
+	OUTPUT_BOX.style.backgroundColor = "aliceblue"
 }
 alert("HELP ME")
