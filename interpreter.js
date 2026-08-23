@@ -17,9 +17,9 @@
 //};
 // End of AI-generated code
 
-const CODE_BOX = getElementById("bf-code")
-const INPUT_BOX = getElementById("bf-input")
-const OUTPUT_BOX = getElementById("bf-output")
+const CODE_BOX = getElementById("bf-code");
+const INPUT_BOX = getElementById("bf-input");
+const OUTPUT_BOX = getElementById("bf-output");
 //class Tape {
 //  constructor(...values) {
 //    this.ptr = 0;
