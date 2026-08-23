@@ -57,25 +57,25 @@ function evaluateBF(code, tape) {
           sr_startpoints.pop();
         };
       case ".":
-				switch (tape[tape.ptr]) {
-					case 8:
-						OUTPUT_BOX.innerHTML = OUTPUT_BOX.innerHTML.slice(0, -1);
-					case 127:
-						OUTPUT_BOX.innerHTML = "";
-					default:
-        		OUTPUT_BOX.innerHTML += String.fromCharCode(tape[tape.ptr]);
-       }
+			//  switch (tape[tape.ptr]) {
+				//	case 8:
+				//  	OUTPUT_BOX.innerHTML = OUTPUT_BOX.innerHTML.slice(0, -1);
+				//  	case 127:
+				//  		OUTPUT_BOX.innerHTML = "";
+				//  	default:
+           		OUTPUT_BOX.innerHTML += String.fromCharCode(tape[tape.ptr]);
+        //};
+      break;
 			case ",":
 				if (comma_counter >= INPUT_BOX.value.length) {INPUT_BOX.style = "color: darkred;";
-																													waitUntil(comma_counter < INPUT_BOX.innevaluerHTML.length, 250);
+																													waitUntil(comma_counter < INPUT_BOX.value.length, 250);
 																												  INPUT_BOX.style = "color: black;";};
 				tape[tape.ptr] = INPUT_BOX.value.charCodeAt(comma_counter);
 				comma_counter++;
-      }
+    };
   }
 }
 window.onload = () => {
 //	CODE_BOX.addEventListener("input", evaluateBF(CODE_BOX.value, tape));
 	OUTPUT_BOX.style.backgroundColor = "aliceblue"
 }
-alert("HELP ME")
