@@ -20,6 +20,7 @@ class Tape {
 }
 const tape = new Tape(...[0])
 function evaluateBF(code, tape) {
+  alert(CODE_BOX.value)
   const string = code;
 	let comma_counter = 0;
   const sr_startpoints = []
